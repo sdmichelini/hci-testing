@@ -12,7 +12,7 @@
 
 <!-- Bootstrap core CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
-
+<link href='main.css' rel='stylesheet'>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -23,15 +23,15 @@
 
 <body>
     <div class='container'>
-            <div id='part1'>
             <h1>Readability Survey</h1>
+            <div id='part1'>
+            
             <form id='start-form'>
 
                 <button type='submit' class='btn btn-primary'>Start the Test</button>
             </form>
             </div>
             <div id='part2' style='display: none;'>
-                <h1>Readability Survey Part 2</h1>
                 <p>
                     Throughout this process, you will be reading various
                     groups of text. You will be tested on each group in terms
@@ -40,21 +40,106 @@
                     find which text block width is the most efficient to
                     read at.
                 </p>
-                <button onclick='transitionFromId("part2","part3");'></button>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Text 1
+                </button>
             </div>
-            <div id='part3' style='display: none;'>
-                <h1>Readability Survey Part 3</h1>
+            <div id='paragraph1' style='display: none;'>
                 <p>
-                    Throughout this process, you will be reading various
-                    groups of text. You will be tested on each group in terms
-                    of reading speed and comphresion. The text will be displayed
-                    in blocks of varying widths with the goal being to
-                    find which text block width is the most efficient to
-                    read at.
+                    Sarah decided to go to the mall last Friday. She decided to 
+                    go to the mall because there was a special on shoes at 
+                    Macy’s. The shoe that she was looking for was running shoes. 
+                    Her old running shoes were getting worn out. Sarah had those 
+                    running shoes for two years and would run biweekly in them 
+                    outside. She would run with her friends Benjamin and Stacy. 
+                    Benjamin works at the local Sear’s in the mall with the 
+                    Macy’s. He got his start there three years ago because his 
+                    friend Jeff worked there. Stacy is currently employed at 
+                    the nearby JC Penney. She is a cashier there and works every 
+                    day except Monday and Thursday. 
+                    Stacy is looking forward to using her employee discount 
+                    on a new pair of sandals. 
                 </p>
-                <button onclick='transitionFromId("part2","part3");'></button>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Quiz
+                </button>
             </div>
-            
+            <div id='quiz1' style='display: none;'>
+                <p>
+                    Take the quiz 
+                    <a href='https://goo.gl/forms/0n3UeuBGX9z1DuOd2' target="_blank">here.</a>
+                </p>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Next Text
+                </button>
+            </div>
+            <div id='paragraph2' style='display: none;'>
+                <p>
+                Peter is the twelve-year-old son of Derek. He is currently 
+                enrolled at the Hillsdale Elementary School. Some of his 
+                classmates are Donald, Erica, Patricia, and Tracy. Erica is 
+                the daughter of Nancy and Joseph. She comes home every day 
+                and enjoys watching CNN. Tracy comes home and goes on CNET. 
+                Nancy works at the local Hatsfield High School and is a 
+                chemistry teacher. In her free time, she enjoys hiking and 
+                geology. Joseph is an accountant for Freedom Mutual in Marlboro. 
+                Patricia is in the girl scouts and is very excited to go on her 
+                first scouting trip next weekend with her mother Allison. 
+                On that trip she will be going on a bike ride through the 
+                Hills of Uniontown and learning how to build a fire. 
+                </p>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Quiz
+                </button>
+            </div>
+            <div id='quiz2' style='display: none;'>
+                <p>
+                    Take the quiz
+                    <a href='https://goo.gl/forms/s2rByv6HKR2evmzy2' target="_blank">here.</a>
+                </p>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Next Text
+                </button>
+            </div>
+            <div id='paragraph3' style='display: none;'>
+                <p>
+                Matthew wanted to go to the pizza shop on Robin Street. He 
+                wanted to meet up with his friends Andrew, Jacob, David, and 
+                Lucas. David is a senior engineer and Old Sweat Inc. He enjoys 
+                taking pictures of nature. Lucas is a writer for the local blog, 
+                The Buzz. He loves being outside with nature and is very active 
+                in his local river conservation committee. His son, William 
+                enjoys going on adventures into the forest. Last week, 
+                he built a rope swing over Lake Rachelle. 
+                One of his favorite meals is bread and margarine. 
+                Jacob’s son is Alex, who is currently has the record for 
+                catching the largest fish in Lake Rachelle. He heard about 
+                fishing from his friend Tess who works at the nearby docks. 
+                </p>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Quiz
+                </button>
+            </div>
+            <div id='quiz3' style='display: none;'>
+                <p>
+                    Take the quiz
+                    <a href='https://goo.gl/forms/hzA65D9e2VSxblxV2' target="_blank">here.</a>
+                </p>
+                <button onclick='next();'
+                    class='btn btn-primary'>
+                    Start Next Text
+                </button>
+            </div>
+            <div id='done' style='display: none;'>
+                <h1>You're Done!</h1>
+                <p id='results'></p>
+            </div>
     </div>
     <script src='index.js'></script>
 </body>

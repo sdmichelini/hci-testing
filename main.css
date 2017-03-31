@@ -1,0 +1,31 @@
+.width-1 {
+    width: 100px;
+}
+.width-2 {
+    width: 200px;
+}
+.width-3 {
+    width: 300px;
+}
+.width-4 {
+    width: 400px;
+}
+.width-5 {
+    width: 500px;
+}
+.width-6 {
+    width: 600px;
+}
+.width-7 {
+    width: 700px;
+}
+.width-8 {
+    width: 800px;
+}
+.width-9 {
+    width: 900px;
+}
+
+p {
+    text-align: justify;
+}
