@@ -18,9 +18,9 @@ const CSS_CLASSES = [
 ];
 
 const USER_SETUP = {
-    order: [0, 1, 2],// Which paragraphs will they get
-    isControl: true,// Are they a control group
-    widths: [0, 8, 4]// Which CSS Widths will they get?
+    order: [1, 2, 0],// Which paragraphs will they get
+    isControl: false,// Are they a control group
+    widths: [2, 1, 3]// Which CSS Widths will they get?
 };
 
 var times = [];
